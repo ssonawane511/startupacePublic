@@ -1,0 +1,82 @@
+/** @format */
+
+.form {
+  position: relative;
+}
+.form-group {
+  margin-bottom: 5px;
+  position: relative;
+}
+.form-group.hasError input {
+  border-color: #f95959 !important;
+}
+.form-group.hasError label {
+  color: #f95959 !important;
+}
+.form-group label {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  transform: translateY(40px);
+  transition: all 0.4s;
+  cursor: text;
+  z-index: -1;
+}
+.form-group label.active {
+  transform: translateY(10px);
+  font-size: 10px;
+}
+.form-group label.fontSwitch {
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 600;
+}
+.form-group input:not([type="submit"]) {
+  background: none;
+  outline: none;
+  border: none;
+  display: block;
+  padding: 10px 0;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  color: #444;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  z-index: 1;
+}
+.form-group input:not([type="submit"]).hasError {
+  border-color: #f95959;
+}
+.form-group span.error {
+  color: #f95959;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  display: none;
+}
+.form-group input[type="password"] {
+  color: #f95959;
+}
+.shadow-textarea textarea.z-depth-1::placeholder {
+  font-weight: 300;
+}
+.shadow-textarea textarea.z-depth-1 {
+  padding-left: 0.8rem;
+}
+
+.product_checkboxes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form_area {
+  padding: 0 100px;
+}
+@media screen and (max-width: 700px) {
+  .form_area {
+    padding: 0 20px;
+  }
+}
